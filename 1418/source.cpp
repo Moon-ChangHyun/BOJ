@@ -1,0 +1,2 @@
+#include<cstdio>
+int i, a, n, k, r, p[25]{ 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97 }; int main() { for (scanf("%d%d", &n, &k); ++i <= n;) { a = i; for (int j : p) { if (j > k)break; while (!(a%j))a /= j; }if (a == 1)++r; }printf("%d", r); }

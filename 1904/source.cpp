@@ -1,0 +1,2 @@
+#include<stdio.h>
+int main() { int N; scanf("%d", &N); printf("%d", [&](int n) {if (n == 1 || n == 2)return n; int pp = 1, p = 2, ret; for (int i = 2; i != n; ++i) { ret = (pp % 15746 + p % 15746) % 15746; pp = p; p = ret; }return ret; }(N)); }
